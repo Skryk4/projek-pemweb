@@ -43,6 +43,9 @@ const NavigationBar = () => {
                 <NavDropdown.Item as={NavLink} to="https://docs.google.com/forms/d/e/1FAIpQLSfmbyWqAIR095xjnMfZCiBcIxMhUU0f0iiz4lSK3W2M2_R-OQ/viewform">PMB</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={NavLink} to="/contact" className="text-dark fw-bold">HUBUNGI KAMI</Nav.Link>
+                <Nav.Link as={NavLink} to="/artikel" className="fw-bold">
+              ARTIKEL
+            </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>

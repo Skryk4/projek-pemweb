@@ -7,6 +7,7 @@ import Contact from '../pages/Contact';
 import ProfilKampus from '../pages/ProfilKampus';
 import ProgramStudi from '../pages/ProgramStudi';
 import BackgroundWrapper from '../components/BackgroundWrapper';
+import ArtikelPage from "../pages/ArtikelPage";
 
 import StrukturOrganisasi from '../pages/StrukturOrganisasi';
 import VisiMisi from '../pages/VisiMisi';
@@ -66,6 +67,7 @@ const AppRoutes = () => {
           <ProgramStudi />
         </BackgroundWrapper>
       } />
+      <Route path="/artikel" element={<ArtikelPage />} />
       <Route path="/program-studi/perhotelan" element={
         <BackgroundWrapper>
           <ProgramStudi />

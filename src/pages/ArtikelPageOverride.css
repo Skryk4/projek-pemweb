@@ -1,0 +1,169 @@
+/* Styling for ArtikelPage to improve UI/UX and avoid overlap with fixed navbar */
+
+.artikel-page-container {
+  padding: 140px 20px 150px; /* increased top padding to avoid navbar overlap, bottom padding for spacing */
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.artikel-page-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #c41c1c;
+}
+
+.artikel-form {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  /* Removed initial opacity and transform to fix visibility */
+  /* opacity: 0; */
+  /* transform: translateY(20px); */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.artikel-form.fade-appear,
+.artikel-form.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.artikel-form.fade-appear-active,
+.artikel-form.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.artikel-form input[type="text"],
+.artikel-form input[type="date"],
+.artikel-form textarea {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.artikel-form input[type="text"].half-width,
+.artikel-form input[type="date"].half-width {
+  width: calc(50% - 10px);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.artikel-form textarea {
+  height: 120px;
+}
+
+.artikel-form button {
+  background-color: #c41c1c;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.artikel-form button:hover {
+  background-color: #a31515;
+}
+
+.artikel-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.artikel-table thead tr {
+  background-color: #c41c1c;
+  color: white;
+  text-align: left;
+}
+
+.artikel-table th,
+.artikel-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.artikel-table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+  /* Removed opacity and transform to prevent hiding rows */
+  /* opacity: 0; */
+  /* transform: translateX(-20px); */
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.artikel-table tbody tr:hover {
+  background-color: #f1e6e6;
+}
+
+.artikel-table tbody tr.fade-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.artikel-table tbody tr.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.artikel-table button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.artikel-table button.edit-btn {
+  color: #007bff;
+}
+
+.artikel-table button.edit-btn:hover {
+  background-color: #d6e9ff;
+}
+
+.artikel-table button.delete-btn {
+  color: #dc3545;
+}
+
+.artikel-table button.delete-btn:hover {
+  background-color: #f8d7da;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .artikel-form input[type="text"].half-width,
+  .artikel-form input[type="date"].half-width {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .artikel-table th,
+  .artikel-table td {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
