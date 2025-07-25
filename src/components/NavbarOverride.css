@@ -19,3 +19,21 @@
   margin-right: 0;
   max-width: 100% !important;
 }
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .custom-navbar {
+    height: 60px;
+    padding: 0.3rem 0.5rem;
+    justify-content: space-between;
+  }
+  .custom-navbar .nav-links {
+    display: none; /* Sembunyikan link navigasi */
+  }
+  .custom-navbar .menu-icon {
+    display: block; /* Tampilkan ikon menu hamburger */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}

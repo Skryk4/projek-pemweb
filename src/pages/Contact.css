@@ -110,3 +110,20 @@
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+    width: 95%;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .contact-left,
+  .contact-right {
+    flex: 100%;
+    padding: 0;
+  }
+  .contact-left {
+    margin-bottom: 20px;
+  }
+}

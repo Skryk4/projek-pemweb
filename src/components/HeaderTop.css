@@ -61,3 +61,26 @@
   width: 18px;
   height: 18px;
 }
+
+/* Responsive HeaderTop */
+@media (max-width: 768px) {
+  .header-top {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+  .social-icons {
+    gap: 0.5rem;
+  }
+  .icon-circle {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  .icon-circle img {
+    width: 16px;
+    height: 16px;
+  }
+  .contact-info {
+    gap: 1rem;
+  }
+}
